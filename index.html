@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valentine's Day Surprise</title>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="container">
+            <h1>Happy Valentine's Day, My Love!</h1>
+            <p>Thank you for being my special one. Click the button for a sweet surprise!</p>
+            <button onclick="showMessage()">Click Me</button>
+        </div>
+    </div>
+
+    <div id="messagePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hideMessage()">&times;</span>
+            <p>You make my world brighter and more beautiful. I love you!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

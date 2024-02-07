@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(341, 100%, 96%); /* Light pink background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: colorChange 10s infinite alternate; /* Animation properties */
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: hsl(341, 100%, 96%); /* Initial color */
+    }
+    100% {
+        background-color: hsla(306, 97%, 75%, 0.795); /* Final color */
+    }
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* White container background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff4d88; /* Darker pink button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff3366; /* Lighter pink on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.2); /* Red transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #ffffff; /* White popup background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.popup-content p {
+    margin-top: 20px;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #ff4d88; /* Pink close button color */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.popup-content .close:hover {
+    color: #ff3366; /* Lighter pink on hover */
+}
+
+
+.popup-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.yes-button {
+    background-color: #4caf50; /* Green Yes button color */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.yes-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.no-button {
+    background-color: #ff4d88; /* Darker pink No button color */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.no-button:hover {
+    background-color: #ff3366; /* Lighter pink on hover */
+}
